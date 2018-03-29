@@ -9,6 +9,8 @@
 
 $(document).ready(function(){ 
 
+
+    /*
     $(".mainImage").click(function() {                                  // Event listener, on click run function showMe
         showMe();
     });
@@ -21,17 +23,13 @@ $(document).ready(function(){
         $(".whatItIs").append("<a href='./main.html'><img src='./assets/images/traffic.jpg' class='pic pic3' alt='Link to Main Page'></a>");
         $(".whatItIs").append("<a href='./main.html'><img src='./assets/images/mamaFratelli.jpg' class='pic pic4' alt='Link to Main Page'></a>");
     };                                                                  // Link these images to main.html
-  
+  */
 
-
+/*
     $("pic").on("click", function() {                                   // When you click on one of the pics
         $("pic").hide();                                                // Hide all the pics
     });
-  
-
-
-
-
+*/
 
 
     

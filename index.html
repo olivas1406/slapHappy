@@ -22,12 +22,9 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-   
-
     <script>
    
-   var config = {
+    var config = {
         apiKey: "AIzaSyD02FpdrDWGTvM0Y3ZukdNcL6_6Qm22ZD8",
         authDomain: "project1-1df1b.firebaseapp.com",
         databaseURL: "https://project1-1df1b.firebaseio.com",
@@ -40,24 +37,20 @@
 
 
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-        // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        // ...
+        console.log(errorMessage);
     });
 
 
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-        // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        // ...
+        console.log(errorMessage);
     });
 
     firebase.auth().signOut().then(function() {
-        // Sign-out successful.
         }).catch(function(error) {
-        // An error happened.
     });
     </script>
     <script src="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.js"></script>
@@ -94,13 +87,9 @@
         signInFlow: 'popup',
         signInSuccessUrl: '<url-to-redirect-to-on-success>',
         signInOptions: [
-         
-        
-        
-        // Leave the lines as is for the providers you want to offer your users.
-         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-      //    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+
           {
             provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
             // Whether the display name should be displayed in the Sign Up page.
@@ -124,10 +113,7 @@
       // The start method will wait until the DOM is loaded.
       ui.start('#firebaseui-auth-container', uiConfig);
 
-
-
     </script>
-
 
 </head> 
 <body>
@@ -143,7 +129,13 @@
                 <img src="./assets/images/clickToEnter.png"class="enterImg" alt="Image of a stressed out man">
             </div>
 
-            <div class="col-6 authentication">
+
+            <div class="col-1">
+
+            </div>
+
+
+            <div class="col-3 authentication">
                     <div id="firebaseui-auth-container"></div>
                     <div id="loader">Loading...</div>
             </div>
