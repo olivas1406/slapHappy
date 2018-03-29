@@ -16,12 +16,14 @@ body {
     overflow-x: hidden;
 }
 
-.projectName {
+.nameMe {
     font-family: 'Rammetto One', cursive;
     background: white;
     color: red;
     text-align: center;
-    border: solid 2px red;
+    border-style: double;
+    border-width: 5px;
+    border-color: red;
     border-radius: 12px;
     margin: 1% auto 2% auto;
 }
@@ -46,13 +48,8 @@ body {
     width: 80%;
 }
 
-.enterText {
-    font-family: 'Berkshire Swash', cursive;
-    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;   
-}
-
 .authentication {
-    background: lightcyan;
+    background: white;
     border: solid 1px red;
     border-radius: 15px;
     height: 190px;
@@ -61,26 +58,15 @@ body {
     
 }
 
-.whatItIs {
+h5 {
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.pic {
-    padding: 2%;
-    border: solid 2px darkslategray;
-    border-radius: 20px;
     background: white;
-    width: 35%;
-}
-
-.choose {
-    text-align: center;
-    font-size: 46px;
-    color: red;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    font-family: 'Berkshire Swash', cursive;
+    width: 70%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid red .5px;
+    
 }
 
 iframe {
@@ -121,11 +107,17 @@ html, body {
 
 .h2Me {
     background: white;
-    border: solid 1px red;
+    text-align: center;
     border-radius: 20px;
     padding: 1%;
     margin: 0 auto 1% auto;
     max-width: 80%;
+    border-color: red;
+    border-width: 3px;  
+    border-style: inset;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;  
+    color: lightgoldenrodyellow;
 }
 
 .h2Me2 {
