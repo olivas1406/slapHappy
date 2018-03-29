@@ -1,0 +1,141 @@
+/*
+ _____   _           ___   _____   _   _       ___   _____   _____  __    __ 
+/  ___/ | |         /   | |  _  \ | | | |     /   | |  _  \ |  _  \ \ \  / / 
+| |___  | |        / /| | | |_| | | |_| |    / /| | | |_| | | |_| |  \ \/ /  
+\___  \ | |       / / | | |  ___/ |  _  |   / / | | |  ___/ |  ___/   \  /   
+ ___| | | |___   / /  | | | |     | | | |  / /  | | | |     | |       / /    
+/_____/ |_____| /_/   |_| |_|     |_| |_| /_/   |_| |_|     |_|      /_/   
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bg.jpg");  
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+.projectName {
+    font-family: 'Rammetto One', cursive;
+    background: white;
+    color: red;
+    text-align: center;
+    border: solid 2px red;
+    border-radius: 12px;
+    margin: 1% auto 2% auto;
+}
+
+.slapMeHappy {
+    padding-top: 1%;
+    width: 95%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mainText {
+    text-align: center;
+}
+
+.mainImage {
+    text-align: center; 
+}
+
+.enterImg {
+    width: 35%;
+}
+
+.enterText {
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;   
+}
+
+.authentication {
+    background: white;
+    border: solid 1px red;
+    border-radius: 20px;
+    
+}
+
+.whatItIs {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pic {
+    padding: 2%;
+    border: solid 2px darkslategray;
+    border-radius: 20px;
+    background: white;
+    width: 35%;
+}
+
+.choose {
+    text-align: center;
+    font-size: 46px;
+    color: red;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+iframe {
+    border: solid lightsteelblue 1px;
+}
+
+.chatMe {
+    margin: 0 auto 0 auto;
+}
+  
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.chat {
+    text-align: center; 
+    border: solid 1px darkgray;
+    border-radius: 24px;
+}
+
+.holdMe {  
+    cursor: pointer;
+    border: solid 2px slategray;
+    border-radius: 25px;
+    max-width: 70%;  
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.maps {
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.h2Me {
+    background: white;
+    border: solid 1px red;
+    border-radius: 20px;
+    padding: 1%;
+    margin: 0 auto 1% auto;
+    max-width: 80%;
+}
+
+.h2Me2 {
+    background: white;
+    border: solid 1px red;
+    border-radius: 20px;
+    padding: 1%; 
+    margin: 0 auto 1% auto;
+    max-width: 80%; 
+}
+
+
+
+
+
+
