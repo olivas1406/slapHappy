@@ -1,10 +1,9 @@
 /*
- _____   _           ___   _____   _   _       ___   _____   _____  __    __ 
-/  ___/ | |         /   | |  _  \ | | | |     /   | |  _  \ |  _  \ \ \  / / 
-| |___  | |        / /| | | |_| | | |_| |    / /| | | |_| | | |_| |  \ \/ /  
-\___  \ | |       / / | | |  ___/ |  _  |   / / | | |  ___/ |  ___/   \  /   
- ___| | | |___   / /  | | | |     | | | |  / /  | | | |     | |       / /    
-/_____/ |_____| /_/   |_| |_|     |_| |_| /_/   |_| |_|     |_|      /_/   
+______     __         ______     ______   __  __     ______     ______   ______   __  __   
+/\  ___\   /\ \       /\  __ \   /\  == \ /\ \_\ \   /\  __ \   /\  == \ /\  == \ /\ \_\ \  
+\ \___  \  \ \ \____  \ \  __ \  \ \  _-/ \ \  __ \  \ \  __ \  \ \  _-/ \ \  _-/ \ \____ \ 
+ \/\_____\  \ \_____\  \ \_\ \_\  \ \_\    \ \_\ \_\  \ \_\ \_\  \ \_\    \ \_\    \/\_____\
+  \/_____/   \/_____/   \/_/\/_/   \/_/     \/_/\/_/   \/_/\/_/   \/_/     \/_/     \/_____/
 */
 * {
     box-sizing: border-box;
@@ -54,8 +53,7 @@ body {
     border-radius: 15px;
     height: 190px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 4%;
-    
+    margin-top: 4%;  
 }
 
 h5 {
@@ -73,21 +71,11 @@ iframe {
     border: solid lightsteelblue 1px;
 }
 
-.chatMe {
-    margin: 0 auto 0 auto;
-}
-  
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-}
-
-.chat {
-    text-align: center; 
-    border: solid 1px darkgray;
-    border-radius: 24px;
 }
 
 .holdMe {  
@@ -120,14 +108,7 @@ html, body {
     color: lightgoldenrodyellow;
 }
 
-.h2Me2 {
-    background: white;
-    border: solid 1px red;
-    border-radius: 20px;
-    padding: 1%; 
-    margin: 0 auto 1% auto;
-    max-width: 80%; 
-}
+
 
 
 
