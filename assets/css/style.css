@@ -27,6 +27,29 @@ body {
     margin: 1% auto 2% auto;
 }
 
+.textSignIn {
+    text-align: center;
+    background-color: white;
+    font-size: 30px; 
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;  
+    color: lightgoldenrodyellow;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 55px;
+    border-color: darkblue;
+    margin-top: 1%;
+    margin-bottom: -1%;
+}
+
+@keyframes blink { 
+    50% { border-color: yellow; } 
+ }
+ .authentication{ 
+     animation: blink 1.3s step-end infinite alternate;
+ }
+
+
 .slapMeHappy {
     padding-top: 1%;
     width: 95%;
@@ -39,36 +62,33 @@ body {
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .enterImg {
     width: 80%;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;  
 }
 
 .authentication {
     background: white;
-    border: dotted;
-    border-width: 3px;
+    border: double;
+    border-width: 5px;
     border-color: darkblue;
     border-radius: 15px;
-  /*  height: 190px;  */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 4%;  
 }
 
-h5 {
+.text1 {
     text-align: center;
     background: white;
+    font-size: 16px;
     width: 70%;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    border: solid darkblue .5px;
-    
+    border: solid darkblue .5px; 
 }
 
 iframe {
