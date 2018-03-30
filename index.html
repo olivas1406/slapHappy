@@ -84,7 +84,7 @@ ______     __         ______     ______   __  __     ______     ______   ______ 
         queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
         // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
         signInFlow: 'popup',
-        signInSuccessUrl: '<url-to-redirect-to-on-success>',
+        signInSuccessUrl: './main.html',
         signInOptions: [
 
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -123,16 +123,25 @@ ______     __         ______     ______   __  __     ______     ______   ______ 
             </div>
         </div>
         <div class="row row2col1">
-            <div class="col-6 mainImage">                
-                <img src="./assets/images/clickToEnter.png"class="enterImg" alt="Image of a stressed out man">
+
+            <div class="col-4">
             </div>
-            <div class="col-1">
+
+
+            <div class="col-4 authentication">
+                <div id="firebaseui-auth-container" style="vertical-align:middle">
+                </div>
+                <div id="loader">Loading..
+                </div>
+                <div class="col-6 mainImage">                
+                    <img src="./assets/images/clickToEnter.png"class="enterImg" alt="Image of a stressed out man">
+                </div>
+
+
+            <div class="col-4">
             </div>
-            <div class="col-3 authentication">
-                <div id="firebaseui-auth-container">
-                </div>
-                <div id="loader">Loading...
-                </div>
+
+
             </div>
         </div>
     </div>
