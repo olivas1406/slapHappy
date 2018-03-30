@@ -24,16 +24,15 @@ ______     __         ______     ______   __  __     ______     ______   ______ 
     <script>
    
     var config = {
-        apiKey: "AIzaSyD02FpdrDWGTvM0Y3ZukdNcL6_6Qm22ZD8",
-        authDomain: "project1-1df1b.firebaseapp.com",
-        databaseURL: "https://project1-1df1b.firebaseio.com",
-        projectId: "project1-1df1b",
-        storageBucket: "project1-1df1b.appspot.com",
-        messagingSenderId: "858737507582"
+        apiKey: "AIzaSyCQFRfqlrFB5RDZ0E1A3dSF9yYy-bFR8k8",
+        authDomain: "slap-happy-fc21b.firebaseapp.com",
+        databaseURL: "https://slap-happy-fc21b.firebaseio.com",
+        projectId: "slap-happy-fc21b",
+        storageBucket: "slap-happy-fc21b.appspot.com",
+        messagingSenderId: "500341484294"
     };
+
     firebase.initializeApp(config);
-
-
 
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
         var errorCode = error.code;
