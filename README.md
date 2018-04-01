@@ -1,11 +1,15 @@
-# slapHappy
+<h1 align="center">
+Slap-Happy Stress Relief Website
+</h1>
+
+***
 
 This is a stress-relief platform that allows you to find multiple ways to blow off steam.  You can use it locate gyms,
 arcades, or bars nearby.  This page was created and is maintained by Daniel Olivas, Joe Bergen, and Kourtney Reynolds.
 
-For help, reach out to us on github.com: 
+This page was created and is maintained by Daniel Olivas, to get help:
 
-olivas1406
-jtbergen
-nukepowermaiden2025
+president@computersoluciones.us
+
+https://www.linkedin.com/in/daniel-olivas/
 
