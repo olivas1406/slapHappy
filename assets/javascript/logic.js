@@ -8,33 +8,70 @@ ______     __         ______     ______   __  __     ______     ______   ______ 
 
 $(document).ready(function(){ 
 
+    $(".rubs").hide();                                                
+    $(".bars").hide();                                           
+    $(".gyms").hide();                                                  
+    $(".arcades").hide();
+    $(".foods").hide();
+    $(".goBack").hide();
 
+    function hideMe() {
+        $(".text1").hide();                                           
+        $(".text2").hide();
+        $(".text3").hide();
+        $(".text4").hide();
+        $(".text5").hide();
+    }
+
+    $(".text1").on("click", function() {                              // Click event listener
+        $(".rubs").show();     
+        $(".goBack").show();                          
+        hideMe();
+    });
+
+    $(".text2").on("click", function() {                              // Click event listener
+        $(".bars").show();        
+        $(".goBack").show();                                     
+        hideMe();
+    });
+
+    $(".text3").on("click", function() {                              // Click event listener
+        $(".gyms").show(); 
+        $(".goBack").show();                                             
+        hideMe();                                        
+    });
+
+    $(".text4").on("click", function() {                              // Click event listener
+        $(".arcades").show();                                         
+        $(".goBack").show();  
+        hideMe();                                          
+    });
+
+    $(".text5").on("click", function() {                              // Click event listener
+        $(".foods").show();   
+        $(".goBack").show();                                          
+        hideMe();                                         
+    });
     
-    $(".gym").hide();                                                   // Hide the map with local gyms
-    $(".arcades").hide();                                               // Hide the map with local arcades
-    $(".bars").hide();                                                  // Hide the map with local bars
-    $(".yourLocation").hide();
-
-    $(".holdMe1").on("click", function() {                              // When you click on the first image
-        $(".gym").show();                                               // Show the map with local gyms
-        $(".holdMe1").hide();                                           // Hide the image that was clicked
+    $(".goBack").on("click", function() {
+        goBack();
     });
 
-    $(".holdMe2").on("click", function() {                              // When you click on the second image
-        $(".arcades").show();                                           // Show the map with local arcades
-        $(".holdMe2").hide();                                           // Hide the image that was clicked
-    });
+    function goBack() {
+        $(".text1").show();                                                
+        $(".text2").show();                                           
+        $(".text3").show();                                                  
+        $(".text4").show();
+        $(".text5").show();
+        $(".rubs").hide();                                                
+        $(".bars").hide();                                           
+        $(".gyms").hide();                                                  
+        $(".arcades").hide();
+        $(".foods").hide();
+        $(".goBack").hide();
 
-    $(".holdMe3").on("click", function() {                              // When you click on the third image
-        $(".bars").show();                                              // Show the map with local bars
-        $(".holdMe3").hide();                                           // Hide the image that was clicked
-    });
+    }
 
-    $(".holdMe4").on("click", function() {                              // When you click on the third image
-        $(".yourLocation").show();                                              // Show the map with local bars
-        $(".holdMe4").hide();                                           // Hide the image that was clicked
-    });
-    
 });
   
  

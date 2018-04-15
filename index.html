@@ -3,7 +3,7 @@ ______     __         ______     ______   __  __     ______     ______   ______ 
 /\  ___\   /\ \       /\  __ \   /\  == \ /\ \_\ \   /\  __ \   /\  == \ /\  == \ /\ \_\ \  
 \ \___  \  \ \ \____  \ \  __ \  \ \  _-/ \ \  __ \  \ \  __ \  \ \  _-/ \ \  _-/ \ \____ \ 
  \/\_____\  \ \_____\  \ \_\ \_\  \ \_\    \ \_\ \_\  \ \_\ \_\  \ \_\    \ \_\    \/\_____\
-  \/_____/   \/_____/   \/_/\/_/   \/_/     \/_/\/_/   \/_/\/_/   \/_/     \/_/     \/_____/  
+  \/_____/   \/_____/   \/_/\/_/   \/_/     \/_/\/_/   \/_/\/_/   \/_/     \/_/     \/_____/
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,124 +12,84 @@ ______     __         ______     ______   __  __     ______     ______   ______ 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slap Happy!</title>
-    <link rel="icon" href="./favicon.ico"> 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Rammetto+One" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.css" />
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-   
-    var config = {
-        apiKey: "AIzaSyCQFRfqlrFB5RDZ0E1A3dSF9yYy-bFR8k8",
-        authDomain: "slap-happy-fc21b.firebaseapp.com",
-        databaseURL: "https://slap-happy-fc21b.firebaseio.com",
-        projectId: "slap-happy-fc21b",
-        storageBucket: "slap-happy-fc21b.appspot.com",
-        messagingSenderId: "500341484294"
-    };
-
-    firebase.initializeApp(config);
-
-    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorMessage);
-    });
-
-
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorMessage);
-    });
-
-    firebase.auth().signOut().then(function() {
-        }).catch(function(error) {
-    });
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Rammetto+One" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">  
     <script src="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.css" />
-    <script type="text/javascript">
-    var uiConfig = {
-        callbacks: {
-          signInSuccess: function(currentUser, credential, redirectUrl) {
-            return true;
-          },
-          signInFailure: function(error) {
-            return handleUIError(error);
-          },
-          uiShown: function() {
-            document.getElementById('loader').style.display = 'none';
-          }
-        },
-        credentialHelper: firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM,
-        queryParameterForWidgetMode: 'mode',
-        queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
-        signInFlow: 'popup',
-        signInSuccessUrl: './main.html',
-        signInOptions: [
-
-            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-
-          {
-            provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-            requireDisplayName: true
-          },
-          {
-            provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-            recaptchaParameters: {
-              type: 'image',
-              size: 'invisible',
-              badge: 'bottomleft'
-            }
-          }
-        ],
-        // Terms of service url.
-        tosUrl: '<your-tos-url>'
-      };
-
-      var ui = new firebaseui.auth.AuthUI(firebase.auth());
-      ui.start('#firebaseui-auth-container', uiConfig);
-
-    </script>
 </head> 
 <body>
     <div class="container-fluid">  
         <div class="row row1col1">
             <div class="col-s-12 col-m-8 col-l-5 nameMe">
-                <h1 class="slapMeHappy ">SLAP HAPPY</h1>
-                <h3 class="slapMeHappy">The Cure For Your Stressful Day</h3>
+                <h1 class="slapMeHappy">SLAP HAPPY</h1>
+                    <h3 class="slapMeHappy">The Cure For Your Stressful Day</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-3">
             </div>
-            <div class=" col-4 signIn">
-                <p class="textSignIn">Sign In Below</p>
+            <div class="col-6">
+                <h2 class="choose h2Me">Choose Your Stress Relief</h2>
             </div>
-            <div class="col-4">
-            </div>
-        </div>  
-        <div class="row row2col1">
-            <div class="col-4">
-            </div>
-            <div class="col-4 authentication">
-                <div id="firebaseui-auth-container" style="vertical-align:middle">
+                <div class="col-l-12 col-xl-4">
+                    <div class="goBack">
+                        Go Back
+                    </div>      
                 </div>
-                <div id="loader">Loading..
+                <div class="col-l-12 col-xl-4">                       
+                        <p class="text2">&#171; Drink It Out &#187;</p>
+                        <br><br>
+                        <p class="text3">&#171; Work It Out &#187;</p>
+                        <br><br>
+                        <p class="text4">&#171; Fun It Out &#187;</p>
+                        <br><br>
+                        <p class="text5">&#171; Eat It Out &#187;</p>
+                        <br><br>
+                        <p class="text1">&#171; Rub It Out &#187;</p>
+                        <br><br>
+                            <iframe
+                                class="rubs maps"
+                                width="400"
+                                height="400"
+                                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAtVxpLvyMxx3H7K1TiqE0qA5AVVLQesRw&q=massage+near+me&zoom=15" allowfullscreen>
+                            </iframe>                        
+                            <iframe
+                                class="bars maps"
+                                width="400"
+                                height="400"
+                                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAtVxpLvyMxx3H7K1TiqE0qA5AVVLQesRw&q=bars+within12+miles&zoom=12" allowfullscreen>
+                            </iframe>
+                            <iframe
+                                class="gyms maps"
+                                width="400"
+                                height="400"
+                                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAtVxpLvyMxx3H7K1TiqE0qA5AVVLQesRw&q=gyms+within+12+miles&zoom=12" allowfullscreen>
+                            </iframe>
+                            <iframe 
+                                class="arcades maps"
+                                width="400"
+                                height="400"                   
+                                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAtVxpLvyMxx3H7K1TiqE0qA5AVVLQesRw&q=arcades+within12+miles&zoom=12" allowfullscreen>
+                            </iframe>
+                            <iframe 
+                                class="foods maps"
+                                width="400"
+                                height="400"                   
+                                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAtVxpLvyMxx3H7K1TiqE0qA5AVVLQesRw&q=food+near+me&zoom=12" allowfullscreen>
+                            </iframe>                  
+                    </div>
+                <div class="col-4">
                 </div>
-                <div class="col-6 mainImage">                
-                    <img src="./assets/images/clickToEnter.png"class="enterImg" alt="Image of a stressed out man">
-                </div>
-            <div class="col-4">
-            </div>
+            <div class="col-3">
             </div>
         </div>
     </div>
-<script src="./assets/javascript/logic.js"></script>
+    <script src="./assets/javascript/logic.js"></script>
 </body>
 </html> 
+
