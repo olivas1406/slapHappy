@@ -11,7 +11,7 @@ arcades, or bars nearby.  This page was created and is maintained by Daniel Oliv
 [CLICK ME to see the deployed website](http://slap-happy.me/)
 <br><br>
 ---
-![friendFinder Screen Cap](./slaphappy.png)
+![Slap Happy Screen Cap](./slaphappy.png)
 
 
 This project was created and is maintained by Daniel Olivas
