@@ -10,7 +10,7 @@ ______     __         ______     ______   __  __     ______     ______   ______ 
 }
 
 body {
-    background-image: url("../images/bg.jpg");  
+    background-image: url("./bg.jpg");  
     background-size: 100%;
     overflow-x: hidden;
 }
@@ -149,11 +149,5 @@ html, body {
     text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;  
     color: lightgoldenrodyellow;
 }
-
-
-
-
-
-
 
 
