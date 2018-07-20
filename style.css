@@ -20,8 +20,7 @@ body {
     background: white;
     color: darkblue;
     text-align: center;
-    border-style: double;
-    border-width: 5px;
+    border: double 5px;
     border-color: darkblue;
     border-radius: 12px;
     margin: 1% auto 2% auto;
@@ -103,7 +102,8 @@ body {
     text-align: center;
     width: 30%;
     border-radius: 22px;
-    margin-left: 60%;
+    margin-left: 70%;
+    margin-top: 10%;
     border: solid darkblue .5px; 
     padding-bottom: 1%;
     cursor: pointer;
@@ -140,7 +140,7 @@ html, body {
     text-align: center;
     border-radius: 20px;
     padding: 1%;
-    margin: 0 auto 1% auto;
+    margin: -2% auto 1% auto;
     max-width: 80%;
     border-color: darkblue;
     border-width: 3px;  
@@ -150,4 +150,7 @@ html, body {
     color: lightgoldenrodyellow;
 }
 
-
+choose {
+    margin-left: auto;
+    margin-right: auto;
+}
