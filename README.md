@@ -9,7 +9,7 @@ Slap-Happy Stress Relief Website
 ### This is a stress-relief platform that allows you to find multiple ways to blow off steam.  You can use it locate gyms, arcades, or bars nearby.  
 
 ---
-[CLICK ME to see it in action](http://slap-happy.me/)
+[CLICK ME to see the deployed site](http://slap-happy.me/)
 <br>
 
 ---
