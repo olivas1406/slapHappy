@@ -15,7 +15,7 @@ Slap-Happy Stress Relief Website
 ---
 <br>
 
-![Slap Happy website screen cap](./slaphappy.png)
+![Slap Happy website screen cap](./slap.png)
 <br><br>
 
 ---
